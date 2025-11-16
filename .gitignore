@@ -1,0 +1,28 @@
+# Environment files with credentials
+.env.local
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Browser profiles and session data
+.config/
+storage_state.json
+
+# Test data with real customer info (exclude entire directory)
+test-data/
+
+# Archived files
+archived/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
