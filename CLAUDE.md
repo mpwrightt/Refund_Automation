@@ -19,9 +19,11 @@ playwright install chromium
 
 ### Test Mode (Safe - Does NOT Submit)
 ```bash
-python3 tcgplayer_direct_selectors.py test-data/sample_refunds.csv
+python3 tcgplayer_direct_selectors.py path/to/your_refund_log.csv
 ```
 Test mode fills forms but stops before clicking "Give Refund" and "Save" buttons.
+
+**Note:** Create your own CSV with the required columns (see CSV Format section below). Test data is not included in the repository for security reasons.
 
 ### Production Mode
 **WARNING: Submits real refunds!**
@@ -112,8 +114,6 @@ Required columns:
 - `Set Name`: Product set/expansion name
 - `Cond.`: Condition code (NM, LP, MP, HP, DM, NMF, LPF, NMH, etc.)
 - `Quant.`: Quantity to refund (script uses absolute value)
-
-See [test-data/sample_refunds.csv](test-data/sample_refunds.csv) for example.
 
 ## Security Considerations
 

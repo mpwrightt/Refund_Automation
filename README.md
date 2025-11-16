@@ -47,7 +47,7 @@ cp .env.example .env.local
 
 ### Test Mode (Dry Run - Safe)
 ```bash
-python3 tcgplayer_direct_selectors.py test-data/sample_refunds.csv
+python3 tcgplayer_direct_selectors.py path/to/your_refund_log.csv
 ```
 
 This will:
@@ -77,8 +77,6 @@ Expected columns:
 - `Set Name`: Product set/expansion name
 - `Cond.`: Condition code (NM, LP, MP, HP, DM, or foil variants like LPF, NMH)
 - `Quant.`: Quantity to refund (can be negative)
-
-See `test-data/sample_refunds.csv` for example.
 
 ## How It Works
 
@@ -163,7 +161,6 @@ Before production use:
 
 - `tcgplayer_direct_selectors.py` - Main automation script
 - `.env.example` - Template for credentials
-- `test-data/sample_refunds.csv` - Example CSV with test data
 - `docs/SOP_Pull_Discrep_Refunds.md` - Business logic documentation
 - `scripts/test_country_detection.js` - Browser console test for international detection
 
